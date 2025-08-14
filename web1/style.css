@@ -1,0 +1,289 @@
+/* === GENERAL === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  background-color: #272727;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === GALERÍA === */
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* === TARJETA === */
+.card {
+  background-color: #2b2b2b;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 255, 204, 0.1);
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.frase {
+  font-size: 1rem;
+  font-style: italic;
+  color: #b9f5f0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* === IMAGEN === */
+.imagen-contenedor img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+}
+
+/* === BOTONES === */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.botones button {
+  background-color: rgba(0, 255, 204, 0.1);
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.botones button:hover {
+  background-color: #00ffcc;
+  color: #1f1f1f;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #181818;
+  border-top: 1px solid #333;
+}
+
+#videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.video-contenedor video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+  margin-bottom: 10px;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: #00ffcc;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: rgba(0, 255, 204, 0.1);
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1c1c1c;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+  border-right: 1px solid #00ffcc;
+}
+
+#sidebar h2 {
+  color: #00ffcc;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+#sidebar ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+#sidebar button {
+  margin-top: 20px;
+  background-color: #00ffcc;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-card {
+  background-color: #1c1c1e;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.015);
+}
+
+.video-card h2.frase {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 12px;
+  text-align: center;
+  font-style: italic;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  outline: none;
+  background-color: #000;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* ======= ESTILO GLOBAL ======= */ body { background-color: #0f0f0f; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+
+.contenedor { max-width: 1200px; margin: 0 auto; padding: 1em; }
+
+/* ======= IMÁGENES ======= */ .imagen-card { background-color: #1e1e1e; padding: 1em; border-radius: 16px; box-shadow: 0 0 15px #00ffe0a6; margin-bottom: 2em; text-align: center; }
+
+.imagen-card img { max-width: 100%; border-radius: 12px; display: block; margin: 0 auto 1em; }
+
+.imagen-frase { font-style: italic; text-align: center; color: #ddd; margin-bottom: 0.5em; }
+
+/* ======= VIDEOS ======= */ #videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5em; padding: 2em 1em; }
+
+.video-card { background-color: #121212; padding: 1.5em; border-radius: 16px; box-shadow: 0 0 25px rgba(0, 255, 200, 0.25); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.video-card:hover { transform: scale(1.02); box-shadow: 0 0 35px rgba(0, 255, 200, 0.4); }
+
+.video-card video { max-width: 100%; border-radius: 12px; display: block; margin: 0 auto; filter: brightness(0.95) contrast(1.05); transition: filter 0.3s ease-in-out; }
+
+.video-card video:hover { filter: brightness(1.05) contrast(1.1); }
+
+.video-frase { font-style: italic; text-align: center; color: #ddd; margin-bottom: 0.5em; }
+
+/* ======= BOTONES ======= */ .btn { background-color: #0ff; border: none; padding: 0.5em 1.2em; border-radius: 10px; color: #111; font-weight: bold; margin-top: 1em; cursor: pointer; transition: box-shadow 0.3s ease; }
+
+.btn:hover { box-shadow: 0 0 12px #00ffe0; }
+
+/* ======= LOADER ======= */ .loader { border: 6px solid #1e1e1e; border-top: 6px solid #00ffe0; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 2em auto; display: none; }
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* ======= SCROLL INFINITO ======= */ #load-more { text-align: center; margin: 2em 0; }
+
+#load-more button { background: #00ffe0; color: #111; padding: 0.8em 1.6em; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: background 0.3s ease; }
+
+#load-more button:hover { background: #00ccb0; }
+
+
+/* Loader animado */
+.loader {
+  border: 5px solid #444;
+  border-top: 5px solid #00ffe0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Botón volver arriba */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: #00ffe0a1;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffe0;
+  transition: background 0.3s ease;
+}
+
+#topBtn:hover {
+  background-color: #00ffe0;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 20px 10px;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+  margin-top: 3em;
+}
